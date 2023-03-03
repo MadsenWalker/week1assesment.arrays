@@ -146,15 +146,20 @@ console.log(days)
 
 // CODE HERE
 
-let fujiTons = fujiAcres.slice
-let galaTons = galaAcres.slice
-let pinkTons = pinkAcres.slice
-let sum = fujitons 
+let fujiTons = 0
+let galaTons = 0
+let pinkTons = 0
 
-for(let i = 0; i < 7; i++){
-    sum(fujiAcres * 6.5)
-} console.log(fujiAcres)
 
+for(let i = 0; i < fujiAcres.length; i++){
+    fujiTons +=(fujiAcres[i]*6.5)
+} console.log(fujiTons)
+for(let i = 0; i < galaAcres.length; i++){
+    galaTons +=(galaAcres[i]*6.5)
+} console.log(galaTons)
+for(let i = 0; i < pinkAcres.length; i++){
+    pinkTons +=(pinkAcres[i]*6.5)
+} console.log(pinkTons)
 
 
 
@@ -180,11 +185,13 @@ for(let i = 0; i < 7; i++){
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = fujiTons * 2000
+let galaPounds = galaTons * 2000
+let pinkPounds = pinkTons * 2000
 
-
+    console.log(fujiPounds)
+    console.log(galaPounds)
+    console.log(pinkPounds)
 
 
 
@@ -207,13 +214,24 @@ for(let i = 0; i < 7; i++){
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds *0.89
+let galaProfit = galaPounds *0.64
+let pinkProfit = pinkPounds *0.55
 
+console.log((fujiProfit).toLocaleString('en-US',{
+    style: 'currency',
+    currency: 'USD',
+}))
 
+console.log((galaProfit).toLocaleString('en-US',{
+    style: 'currency',
+    currency: 'USD',
+}))
 
-
+console.log((pinkProfit).toLocaleString('en-US',{
+    style: 'currency',
+    currency: 'USD',
+}))
 
 
 // PROBLEM 7
@@ -227,3 +245,9 @@ for(let i = 0; i < 7; i++){
 */
 
 // CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+
+console.log((totalProfit).toLocaleString('en-US',{
+    style: 'currency',
+    currency: 'USD',
+}))
