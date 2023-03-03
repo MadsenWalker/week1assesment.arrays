@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = 'a repository system that allows for the continual saving of code, stands for Global Information Tracker. '
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition = 'a cloud service that allows for the easy saving of git repositories'
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -27,6 +31,8 @@
 
 //CODE HERE
 
+let gitInitDefinition = 'A command that invokes/initiates the creation of a new git repository'
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -35,6 +41,8 @@
 
 //CODE HERE
 
+let gitCloneDefinition = "A command to copy an exisitng repository. Must first invoke git init internally"
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +50,8 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition = 'will populate the state of the working directory as well as the staging area. No committed project history will be shown'
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -54,6 +64,10 @@
 
 //CODE HERE
 
+let gitAddDefinition = 'will add a change in the staging area, to the current working directory, changes are not recorded until git commit is run'
+
+let gitAddCode = 'git add .'
+
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -65,6 +79,9 @@
 
 //CODE HERE
 
+let gitCommitDefinition = 'creates a snapshot file of where the project is adding all changes in the staging area'
+
+let gitCommitCode = 'git commit -m "initial commit"'
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +90,5 @@
 */
 
 //CODE HERE
+
+let gitPushDefinition = 'uploads a local repository to a remote repository'
